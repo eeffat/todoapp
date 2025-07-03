@@ -17,7 +17,14 @@ const app = express(); // Using Express.js to power the app
 // -------------------------------- ↓ MIDDLEWARE SETUP ↓ -----------------------------------
 
 app.use(express.json()); // Uses express in JSON format
-app.use(cors('*')); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
+
+const corsOptions = {
+    origin: 'https://todoapp-two-dun.vercel.app', // Allows all origins to access the server - not secure - * is
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allows these HTTP methods to be used
+    credentials: true, // Allows credentials to be sent with requests
+};
+
+app.use(cors('corsOptions')); // Enables use of CORS - * means every domain is now allowed acces to this server to send and receive data - not secure - * is for development only
 
 
 // -------------------------------- ↓ DATABASE CONNECTION + APP STARTUP ↓ -----------------------------------
