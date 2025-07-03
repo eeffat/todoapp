@@ -2,7 +2,7 @@
 
 const taskForm = document.getElementById("taskForm");
 const editTaskName = document.getElementById("editTaskName");
-const url = "http://localhost:3000";
+const url = "https://to-do-app-x2vq.onrender.com";
 
 
 // ----------------------------------------- ↓ GENERAL FUNCTIONS ↓ -----------------------------------------
