@@ -24,7 +24,7 @@ nav, footer {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(/frontend/images/homeBackground3.jpg);
+    background-image: url(../images/homeBackground3.jpg);
 }
 
 .bg-img.dashboard{
